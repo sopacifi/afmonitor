@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "outcontainer/{rand-guid}.txt",
+      "connection": "sqlvavvs5mfppik67u_STORAGE"
+    }
+  ]
+}
